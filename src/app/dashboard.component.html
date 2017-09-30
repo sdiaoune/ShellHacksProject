@@ -1,0 +1,24 @@
+<div style="text-align:center">
+  <h1>Dashboard</h1>
+  <!-- Graph for latest submissions -->
+  <table width=100%>
+    <tr>
+      <td width="50%"><h2 style="text-align: center">Data</h2></td>
+      <td width="50%"><h2 style="text-align: center">Latest Results</h2></td>
+    </tr>
+    <tr>
+      <td width="50%">
+        <div style="display: block">
+          <canvas baseChart
+              [data]="doughnutChartData"
+              [labels]="doughnutChartLabels"
+              [chartType]="doughnutChartType"
+              (chartHover)="chartHovered($event)"
+              (chartClick)="chartClicked($event)">
+          </canvas>
+        </div>
+      </td>
+      <td width="50%"><p>Info submitted here</p></td>
+    </tr>
+  </table>
+</div>
