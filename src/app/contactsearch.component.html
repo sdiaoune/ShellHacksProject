@@ -3,16 +3,16 @@
   <h2>Contact Info</h2>
   <div>
     <form>
-      <input type="text" placeholder="Name"/> <br/>
-      <input type="text" placeholder="Email"/> <br/>
-      <input type="text" placeholder="Missing Person Name"/>
+      <input type="text" placeholder="Name" id=name/> <br/>
+      <input type="text" placeholder="Email" id=email/> <br/>
+      <input type="text" placeholder="Missing Person Name" id=mpn/>
       <br/>
       <br/>
       <label>Drag and Drop Picture Here!</label>
       <br/>
       <br/>
-      <input type="file"/>
-      <input type="submit" />
+      <input type="file" id=pic/>
+      <input type="submit" (click)=submitUser(this.name.value,this.email.value,this.mpn.value,this.pic)/>
     </form>
   </div>
 </div>

@@ -8,12 +8,13 @@ import 'rxjs/add/operator/toPromise';
 @Injectable()
 export class DashboardService {
 
-private reportedUrl = '127.0.0.1:5000/reported';  // URL to web api
+private headers = new Headers({'Content-Type': 'application/json'});
+private reportedUrl = 'http://127.0.0.1:5000/reported';  // URL to web api
 
 constructor(private http: Http) { }
 
 getReported(): Promise<Reported[]> {
-  return this.http.get(this.reportedUrl)
+  return this.http.get(this.reportedUrl, {headers: this.headers})
              .toPromise()
              .then(response => response.json().data as Reported[])
              .catch(this.handleError);
