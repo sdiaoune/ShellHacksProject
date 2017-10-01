@@ -1,5 +1,20 @@
 <div style="text-align:center">
   <h1>About</h1>
-  <p>Lorem ipsum dolor sit amet, id mea sumo deleniti, tempor phaedrum ut pri, ex constituto vituperata vel. Delenit mentitum oporteat eu sit, mutat decore nonumes ad est. Sit fugit possit eu, te sed maiorum reformidans. Facete melius sed eu, in ipsum veritus tacimates eam, alii verear constituto usu cu. Eos te ullum homero tacimates, nobis fierent complectitur eu duo, et graece persecuti eos. Eos id vivendum sapientem. Ad option invenire periculis mei, ad verterem efficiendi qui. Eos alterum iracundia delicatissimi in, usu noster erroribus honestatis id. Democritum deseruisse te mei, esse propriae ut quo, eu est dolor mandamus adipiscing. Error assentior te duo, primis nostrum mea ei. Eum eu dicit docendi accusamus, at sed malorum adipisci. An per erant doming causae, cetero appetere insolens eos at.
-</p>
+  <p>Jixel is the product of Shell Hacks 2017! With Hurricane Irma passing through, hackers around Miami (and other cities) hoped that it wouldn't delay or cancel the hackathon. Then, we witnessed Hurricane Maria ravage through Puerto Rico and a massive earthquake devastate Mexico City.</p>
+  <p>With all these tragedies happening around the world, sometimes families get separated and members can go missing. We hope that Jixel can help reuinite lost ones with their families.</p>
+  <h2>How It Works:</h2>
+  <p>For the general public, if you are trying to find a missing loved one, you can visit the jixel web app, fill out a form providing your name, contact info, the missing person's name, and a picture of the missing person. This will create a record in our database to see if any matches come up within the coming days.</p>
+  <p>Then, if an disaster relief organization, such as the American Red Cross, or FEMA, finds a missing person, they can access our admin dashboard and submit a picture of the found person to the juxel database.</p>
+  <p>Behind the scenes, this triggers a search to see if any relatives may have uploaded pictures of this person. If there is a match, we will go ahead and contact the relative to notify them that we may have found the missing person. If there is not a match, we will hold on to a picture for a couple more days, and check each day if there is a new match.</p>
+  <h2>The Process:</h2>
+  <p>When we started with this idea, we knew what we wanted Jixel to become. The difficulties came in because of our limited resources. For many open source facial recognition libraries, access to an NVIDIA GPU is required. We found this out after 6 hours of trying to install the necessary libraries with no luck. We were using basic servers, and found out we would have to shell out a big sum of money monthly to obtain a cloud server with an NVIDIA GPU. Because we did not have to resources to purchase this, we used a local virtual machine to simulate the process. With the setup of the virtual machine, things started moving quickly. We designed the web front end, database, and worked on creating an API to communicate between them using Flask. To tunnel the application from the virtual machine, we utilized ngrok. It was not an easy process, and we were met with many barriers that we had to overcome within a period of 36 hours, but in the end, we are proud of what we have learned and achieved.
+  </p>
+
+<h2>Safety and Security:</h2>
+<p>The pictures of missing persons should only be taken with their permission. Furthermore, their pictures will not be stored for longer than 7 days. If no match is found, and 7 days has passed, our API will trigger the database and file system to delete the record and picture.</p>
+
+<h2>Teammates:</h2>
+<p>Soya Diaoune</p>
+<p>Perry Gabriel</p>
+<p>Nalin Suri</p>
 </div>

@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ChartsModule } from 'ng2-charts';
+import { HttpModule } from '@angular/http'
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header.component';
@@ -38,7 +39,8 @@ import { DashboardComponent } from './dashboard.component';
         component: DashboardComponent
       }
     ]),
-    ChartsModule
+    ChartsModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [HeaderComponent, AppComponent]
